@@ -10,9 +10,10 @@ const LoadTools = ({value} : KnowMeProps) => {
                     key={index}
                     className={` flex gap-2 self-start ${value.att[index]} w-max`}
                   >
-                    {value.img.map((I) => {
+                    {value.img.map((I,index) => {
                       return (
                         <div
+                        key={index}
                           className="flex flex-row gap-2 items-center p-2 border-2 border-white-3 rounded-lg  
                         "
                         >

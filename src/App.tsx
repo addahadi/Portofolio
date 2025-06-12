@@ -10,29 +10,38 @@ import Footer from './component/Footer';
 import MobileNav from './component/MobileNav';
 
 function App() {
-   const draw = (ctx:any, grid: any[] , row: number , column : number) => {
-    
-     for (let x = 0; x <row; x++) {
-       for (let y = 0; y <column; y++) {
-         ctx.fillStyle = `rgb(${grid[x][y]} ${grid[x][y]} ${
-           grid[x][y]
-         })`;
-         ctx.fillRect(x * 10, y * 10, 10, 10);
-       }
-     }
-   };
+  const draw = (
+    ctx: CanvasRenderingContext2D,
+    grid: number[][],
+    row: number,
+    column: number
+  ) => {
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    const cellSize = 10;
+
+    for (let x = 0; x < row; x++) {
+      for (let y = 0; y < column; y++) {
+        const val = grid[x][y];
+        if (val !== 13) {
+          ctx.fillStyle = `rgb(${val} ${val} ${val})`; // grayscale
+          ctx.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
+        }
+      }
+    }
+  };
+  
   return (
-    <div className=" min-h-screen top-0  m-0 p-0 max-md:px-3">
+    <div className="  m-0 p-0 max-lg:px-4">
       <div className=" max-md:hidden">
         <NavBar />
       </div>
       <div className="flex items-center justify-between md:hidden mb-10">
         <Link to="/">
           <img
-            src="../public/logo.png"
+            src="/Portofolio/logo.png"
             width={50}
             height={50}
-            className=""
+            className="  pt-2"
           ></img>
         </Link>
         <MobileNav />

@@ -23,7 +23,7 @@ const Feed = () => {
             <ul className="flex flex-col gap-10 p-3">
               {Works.map((value , index) => {
                 if(index <= 2){
-                  return <Work value={value} extendStyle={`sticky`}  />;
+                  return <Work value={value} extendStyle={`sticky`}  key={index} />;
                 }
               })}
             </ul>
@@ -35,7 +35,7 @@ const Feed = () => {
           </h1>
           <div className="grid grid-cols-3 grid-rows-2 gap-2 w-full  mt-5 p-3 max-md:grid-cols-1 max-md:grid-rows-4">
             {skill.map((value, index) => {
-              return <KnowMe value={value} index={index} />;
+              return <KnowMe value={value} index={index} key={index}/>;
             })}
             <div className="map rounded-3xl relative z-0">
               <div className="rounded-full -z-10 bg-white-3 absolute size-24 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 "></div>
@@ -43,7 +43,7 @@ const Feed = () => {
               <div className="rounded-full bg-white-3 absolute size-24 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 animate-pinga -z-50 bg-gradient-to-r origin-bottom-right
                from-white-3 to-white-3 "></div>
               <img
-                src="../public/imogi.png"
+                src="/Portofolio/imogi.png"
                 width={100}
                 className=" absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 z-0"
               />
@@ -61,7 +61,7 @@ const Feed = () => {
             </p>
           </div>
           <Button>
-            <img src="../public/Vector.png" width={20} />
+            <img src="/Portofolio/Vector.png" width={20} />
             <Link to="/contact">
               <span className=" text-white-1">get in touch</span>
             </Link>

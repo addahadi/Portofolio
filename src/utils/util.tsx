@@ -19,7 +19,7 @@ export const NavBarItems = [
     }
 ]
 
-export const svgies = ["../public/aboutus.svg","../public/projectsus.svg","../public/contactus.svg","../public/techus.svg"]
+export const svgies = ["/Portofolio/aboutus.svg","/Portofolio/projectsus.svg","/Portofolio/contactus.svg","/Portofolio/techus.svg"]
 
 export function getRandomInteger(N : number) {
   return Math.floor(Math.random() * (N + 1));
@@ -29,11 +29,11 @@ export function getRandomInteger(N : number) {
 
 export const socialMedia = [
   {
-    icon: "../public/githubLogo.png",
+    icon: "/Portofolio/githubLogo.png",
     path: "https://github.com/addahadi",
   },
   {
-    icon: "../public/linkIn.png",
+    icon: "/Portofolio/linkIn.png",
     path: "https://www.linkedin.com/in/adda-missoum",
   },
 
@@ -42,46 +42,95 @@ export const socialMedia = [
 
 export const Circles = [1000,1200,1600,2200]
 
+export const MySkills = [
+  "React.js",
+  "TypeScript",
+  "Firebase",
+  "TailwindCSS",
+  "JavaScript",
+  "Git",
+  "HTML",
+  "CSS",
+];
+
+export const MyTimeline = [
+  {
+    date: "2022",
+    description: "Started studying Computer Science at Ibn Khaldoun University",
+  },
+  {
+    date: "2023",
+    description:
+      "Joined a team on Discord and worked on collaborative web projects",
+  },
+  {
+    date: "2024",
+    description:
+      "Built personal portfolio and contributed to open-source projects",
+  },
+  {
+    date: "2025",
+    description: "Seeking internships and real-world development experience",
+  },
+];
+
 
 export const Works: WorksProps[] = [
   {
     title: "Dz-Podcast",
     desc: "Welcome to Pod_Dz, a cutting-edge podcast web app built with React and TypeScript. It’s designed to not only let you browse popular podcasts but also gives you the power to create your own podcasts using AI-generated images and text-to-speech technology! 🔥",
-    img: "../public/podcast.png",
-    path: "https://github.com/addahadi/podcast-website",
-    icon: "../public/podcast-logo.svg",
+    img: "/Portofolio/podcast.png",
+    path: "https://addahadi.github.io/podcast-website/",
+    github: "https://github.com/addahadi/podcast-website",
+
+    icon: "/Portofolio/podcast-logo.svg",
     edge: "50px",
+    tags: ["AI", "Web"],
   },
   {
     title: "Travel-advisor",
     desc: "This travel advisor website helps users find nearby hotels, restaurants, and attractions. It shows a list of places on the left, with ratings and categories, and a map on the right with markers for each location. Simple and user-friendly for quick recommendations, making travel planning easy",
-    img: "../public/mapApp.png",
+    img: "/Portofolio/mapApp.png",
     path: "https://github.com/addahadi/map_app",
-    icon: "../public/mapicon.svg",
-    edge:"80px"
+    github: "https://github.com/addahadi/map_app",
+    icon: "/Portofolio/mapicon.svg",
+    edge: "80px",
+    tags: ["Web"],
   },
   {
     title: "Text-Docs",
     desc: "Text Docs is a simple and intuitive web application for managing text documents. It allows users to create, search, and delete documents with ease. The app features a dark-themed interface for a modern and visually appealing user experience. The application is fully responsive, ensuring a seamless experience across all devices, from desktops to mobile phones.",
-    img: "../public/textEditor.png",
-    path: "https://github.com/addahadi/TextEditor",
-    icon: "../public/docs.svg",
+    img: "/Portofolio/textEditor.png",
+    path: "https://addahadi.github.io/TextEditor/",
+    github: "https://github.com/addahadi/TextEditor",
+    icon: "/Portofolio/docs.svg",
     edge: "110px",
+    tags: ["Web"],
   },
   {
     title: "Workout-app",
-    desc: "Welcome to [Your Website Name], your ultimate fitness companion! We provide users with daily workout routines tailored for each muscle group. Whether you're looking to build strength, improve endurance, or tone up, we've got you covered. Each exercise is paired with detailed descriptions and instructional videos to guide you through proper form and technique. Start your fitness journey",
-    img: "../public/sport.png",
+    desc: "Welcome to Workout-app, your ultimate fitness companion! We provide users with daily workout routines tailored for each muscle group. Whether you're looking to build strength, improve endurance, or tone up, we've got you covered. Each exercise is paired with detailed descriptions and instructional videos to guide you through proper form and technique. Start your fitness journey",
+    img: "/Portofolio/sport.png",
     path: "https://github.com/addahadi/gym_website",
-    icon: "../public/sport-logo.svg",
-    
+    github: "https://github.com/addahadi/gym_website",
+    icon: "/Portofolio/sport-logo.svg",
+    tags: ["Web"],
+  },
+  {
+    title: "StoryGen-app",
+    desc: "An AI-powered storytelling platform where users can create, explore, and share stories. It features an AI assistant that helps users generate and improve their stories. Users can also read stories from others, give likes, save favorites, customize their bio and profile picture, receive notifications, and follow other users, making storytelling interactive and engaging.",
+    img: "/Portofolio/StoryGen.png",
+    path: "https://addahadi.github.io/Story-Website/#/signin",
+    github: "https://github.com/addahadi/Story-Website",
+    icon: "/Portofolio/story-logo.svg",
+    tags: ["AI", "Web"],
   },
 ];
 
 
 export const skill: KnowMe[] = [
   {
-    img: "../public/imogi.png",
+    img: "/Portofolio/imogi.png",
     title: "About me",
     desc: "who i am and what i do",
     path: "/about",
@@ -90,59 +139,59 @@ export const skill: KnowMe[] = [
     img: [
       {
         title: "javascript",
-        icon: "../public/javascript.svg",
+        icon: "/Portofolio/javascript.svg",
       },
       {
         title: "github",
-        icon: "../public/github.svg",
+        icon: "/Portofolio/github.svg",
       },
       {
         title: "typescript",
-        icon: "../public/typescript.svg",
+        icon: "/Portofolio/typescript.svg",
       },
       {
         title: "react",
-        icon: "../public/react.svg",
+        icon: "/Portofolio/react.svg",
       },
       {
         title: "tailwind",
-        icon: "../public/tailwind.svg",
+        icon: "/Portofolio/tailwind.svg",
       },
       {
         title: "redux",
-        icon: "../public/redux.svg",
+        icon: "/Portofolio/redux.svg",
       },
       {
         title: "html",
-        icon: "../public/html.svg",
+        icon: "/Portofolio/html.svg",
       },
       {
         title: "javascript",
-        icon: "../public/javascript.svg",
+        icon: "/Portofolio/javascript.svg",
       },
       {
         title: "github",
-        icon: "../public/github.svg",
+        icon: "/Portofolio/github.svg",
       },
       {
         title: "typescript",
-        icon: "../public/typescript.svg",
+        icon: "/Portofolio/typescript.svg",
       },
       {
         title: "react",
-        icon: "../public/react.svg",
+        icon: "/Portofolio/react.svg",
       },
       {
         title: "tailwind",
-        icon: "../public/tailwind.svg",
+        icon: "/Portofolio/tailwind.svg",
       },
       {
         title: "redux",
-        icon: "../public/redux.svg",
+        icon: "/Portofolio/redux.svg",
       },
       {
         title: "html",
-        icon: "../public/html.svg",
+        icon: "/Portofolio/html.svg",
       },
     ],
     title: "Teck Stack",
@@ -200,122 +249,137 @@ export const skill: KnowMe[] = [
 ];
 
 
-export  const TeckStack = [
+export  const TeckStack  = [
   {
-    title: "Web & Dev",
+    title: "Front-End",
     card: [
       {
-        icon: "../public/typescript.svg",
+        icon: "/Portofolio/typescript.svg",
         name: "Typescript",
         fam: "Language",
       },
       {
-        icon: "../public/javascript.svg",
+        icon: "/Portofolio/javascript.svg",
         name: "Javascript",
         fam: "Language",
       },
       {
-        icon: "../public/react.svg",
+        icon: "/Portofolio/react.svg",
         name: "React",
         fam: "Framework",
       },
       {
-        icon: "../public/tailwind.svg",
+        icon: "/Portofolio/tailwind.svg",
         name: "Tailwind",
         fam: "CSS",
       },
       {
-        icon: "../public/materialui.svg",
-        name: "Material ui",
+        icon: "/Portofolio/materialui.svg",
+        name: "Material UI",
         fam: "CSS",
       },
       {
-        icon: "../public/redux.svg",
+        icon: "/Portofolio/redux.svg",
         name: "Redux",
         fam: "State Manager",
       },
       {
-        icon: "../public/github.svg",
+        icon: "/Portofolio/framer-motion.svg",
+        name: "Framer Motion",
+        fam: "Animation",
+      },
+    ],
+  },
+  {
+    title: "Back-End",
+    card: [
+      {
+        icon: "/Portofolio/firebase.svg",
+        name: "Firebase",
+        fam: "Database & Auth",
+      },
+      {
+        icon: "/Portofolio/github.svg",
         name: "Github",
         fam: "Version Control",
       },
       {
-        icon: "../public/canva.svg",
-        name: "Canva",
-        fam: "Design app",
+        icon:"/Portofolio/express.svg",
+        name:"expressJs",
+        fam:"back-end framework"
       },
       {
-        icon: "../public/framer-motion.svg",
-        name: "Frame motion",
-        fam: "Animation",
+        icon:"/Portofolio/nodeJs.svg",
+        name:"nodeJs",
+        fam:"back-end language",
       },
       {
-        icon: "../public/firebase.svg",
-        name: "Firebase",
-        fam: "Data Man",
-      },
+        icon:"/Portofolio/mysql.svg",
+        name:"mySQL",
+        fam:"Sgbd",
+      }
     ],
   },
   {
-    title: "Apps",
+    title: "Apps & Tools",
     card: [
       {
-        icon: "../public/discord.svg",
+        icon: "/Portofolio/canva.svg",
+        name: "Canva",
+        fam: "Design",
+      },
+      {
+        icon: "/Portofolio/discord.svg",
         name: "Discord",
         fam: "Communication",
       },
       {
-        icon: "../public/chrome.svg",
+        icon: "/Portofolio/chrome.svg",
         name: "Chrome",
-        fam: "browser",
+        fam: "Browser",
       },
       {
-        icon: "../public/vscode.svg",
-        name: "Vscode",
-        fam: "editor",
+        icon: "/Portofolio/vscode.svg",
+        name: "VS Code",
+        fam: "Editor",
       },
-
       {
-        icon: "../public/spotify.svg",
+        icon: "/Portofolio/spotify.svg",
         name: "Spotify",
-        fam: "music",
+        fam: "Music",
       },
-
       {
-        icon: "../public/duolingo.svg",
+        icon: "/Portofolio/duolingo.svg",
         name: "Duolingo",
-        fam: "Language",
+        fam: "Language Learning",
       },
-
       {
-        icon: "../public/drive.svg",
+        icon: "/Portofolio/drive.svg",
         name: "Drive",
-        fam: "data man",
+        fam: "Cloud Storage",
       },
-
       {
-        icon: "../public/chatgpt.png",
-        name: "Chatgpt",
-        fam: "Ai text",
+        icon: "/Portofolio/chatgpt.png",
+        name: "ChatGPT",
+        fam: "AI Assistant",
       },
-
       {
-        icon: "../public/docs.svg",
+        icon: "/Portofolio/docs.svg",
         name: "Text Docs",
-        fam: "text editor",
+        fam: "Documentation",
       },
     ],
   },
-];
+]
 
-export const MyProfile : ProfileProps[] = [
+export const MyProfile: ProfileProps[] = [
   {
     title: "WHO I AM",
-    Text: "Hi 👋, I am  adda hadi a computer science student at Ibn Khaldoun University in Algeria 🎓, where I achieved a high distinction in my first year. I have over one year of professional experience in web development, during which I have honed my skills in building modern, responsive web applications",
+    Text: "Hi 👋 I'm Adda Hadi, a dedicated computer science student at Ibn Khaldoun University in Algeria 🎓. I ranked among the top of my class during both my first and second years, reflecting my strong academic foundation. With over 2 years of experience in web development, I specialize in creating modern, responsive web applications.",
   },
   {
     title: "WHAT I DO",
-    Text: "With two years of invaluable experience in my role at Coders –– a web development group I co-founded with my friends during university, I have honed my skills in React.js, Next.js, TailwindCSS, and TypeScript, allowing me to craft seamless and interactive user experiences. During my time with Coders, I had the privilege of collaborating on projects for esteemed clients such as the , my university Ibn khaldoun , bab zouar university , bid3a club. It was an incredibly rewarding experience to develop applications that directly impact the lives of citizens.",
+    Text: " I'm a full-stack developer who enjoys bringing ideas to life through code. On the backend, I work with Node.js, Express.js, MySQL, and Firebase. On the frontend, I use TypeScript, JavaScript, React, and TailwindCSS to build fast, responsive user interfaces.Lately, I've been integrating AI into web applications to create smarter, more interactive experiences — from using AI-driven features to enhancing user engagement",
   },
   {
     title: "REACH ME",

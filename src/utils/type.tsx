@@ -14,7 +14,9 @@ export interface WorksProps {
     desc: string
     icon: string
     path: string
+    github: string
     edge?: string
+    tags:string[]
 }
 
 export interface WorkProps {

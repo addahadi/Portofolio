@@ -13,9 +13,9 @@ const MobileNav = () => {
   return (
     <section>
       <Sheet>
-        <SheetTrigger>
+          <SheetTrigger>
           <img
-            src="../public/hamburger.svg"
+            src="/Portofolio/hamburger.svg"
             width={30}
             height={30}
             alt="menu"
@@ -27,7 +27,7 @@ const MobileNav = () => {
             to="/"
             className="flex cursor-pointer items-center gap-1 pb-10 pl-4"
           >
-            <h1 className="text-24 font-extrabold text-white-1 ml-2">Hi 👋</h1>
+            <h1 className="text-xl font-bold text-white-1 ml-2">Hi 👋</h1>
           </Link>
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
             <nav className="flex h-full flex-col gap-6 text-white-1">
@@ -42,12 +42,10 @@ const MobileNav = () => {
                     </div>
                   </SheetClose>
                 </Link>
-              ))
-              }
+              ))}
             </nav>
           </div>
         </SheetContent>
-        
       </Sheet>
     </section>
   );

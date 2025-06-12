@@ -11,12 +11,12 @@ const NavBar = () => {
       <span className="blur2 absolute -top-6 left-[60%] -translate-x-2/4 "></span>
       <nav className=" px-2 glassmorphism-black  flex flex-row items-center justify-between max-w-[800px]  m-auto rounded-sm  ">
         <Link to="/" className=" border-r-2 px-2  mr-5">
-          <img src="../public/logo.png" width={35} className=" " />
+          <img src="/Portofolio/logo.png" width={60} className=" " />
         </Link>
         <ul className="flex flex-1 flex-row gap-4 items-center text-white-4 text-sm py-2">
-          {NavBarItems.map((value) => {
+          {NavBarItems.map((value,index) => {
             return (
-              <Link to={value.path} className=" p-2 hover:text-white-1 transition-colors">
+              <Link key={index} to={value.path} className=" p-2 hover:text-white-1 transition-colors">
                 <h1>{value.title}</h1>
               </Link>
             );
@@ -25,7 +25,7 @@ const NavBar = () => {
         <ul className="flex flex-row gap-5">
           {socialMedia.map((value) => {
             return (
-              <a href={value.path}>
+              <a key={value.path} href={value.path}>
                 <img src={value.icon} width={20} height={15} />
               </a>
             );

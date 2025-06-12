@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Circle = ({value} : {value : number}) => {
   return (

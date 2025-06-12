@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 
 const Loadimg = ({value} : {value : string}) => {
   return( 

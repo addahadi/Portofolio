@@ -12,9 +12,9 @@ const Hero = () => {
           <span className=" text-white-2">Iam</span> Adda Hadi
         </h1>
         <p className=" text-white-3 text-lg  text-start">
-          A front-end engineer and UI/UX designer helping startups turn their
-          visions into a digital reality. I specialize in designing and building
-          modern mobile and web-based apps.
+          A front-end engineer and a computer science student  helping startups turn their
+          visions into a digital reality. I specialize in  building
+          modern mobile and web-based apps with different tools 😎.
         </p>
         <div className="flex  gap-4 w-full max-sm:flex-col ">
           <Button Classname="max-sm:w-full">
@@ -29,7 +29,11 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <img src="../public/adda (2).jpg " width={300} className=" rounded-lg max-md:hidden" />
+      <img
+        src="/Portofolio/adda (2).jpg "
+        width={300}
+        className=" rounded-lg max-md:hidden"
+      />
     </div>
   );
 };

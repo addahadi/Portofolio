@@ -11,11 +11,16 @@
   min-height: 100vh;
 }
 
+
+html , body{
+  padding: 0;
+  margin: 0;
+}
 .map{
-  background: url("../public/map.jpg");
+  background: url("/Portofolio/location.png");
 }
 .adda{
-  background: url("../public/adda (2).jpg");
+  background: url("/Portofolio/adda (2).jpg");
 }
 
 #Card{
@@ -29,7 +34,7 @@
   width: 44%;
   height: 70%;
   right: -200px;
-  background: url('../public/Arrow\ 07.png');
+  background: url('/Portofolio/Arrow\ 07.png');
 }
 
 
@@ -108,7 +113,7 @@ th {
 
 @media screen and (max-width: 658px) {
   .arrow{
-    background: url("../public/Arrow\ 02.png");
+    background: url("/Portofolio/Arrow\ 02.png");
     left: 100px;
     bottom: -50px;
     width: 13%;

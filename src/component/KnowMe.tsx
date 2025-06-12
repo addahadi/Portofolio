@@ -57,7 +57,7 @@ const KnowMe = ({value,index} : KnowMeProps & {index : number}) => {
           <div
             ref={HobbiesContainer}
             className={cn("overflow-hidden  w-full flex-1 relative", {
-              "w-max": !value.img[0].position,
+              "w-max": !(typeof value.img === "string") && !value.img[0].position,
             })}
           >
             <LoadHobbies value={value} HobbiesContainer={HobbiesContainer} />
